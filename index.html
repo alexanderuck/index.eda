@@ -25,15 +25,18 @@
                 <img src="./img/header-logo.png" alt="Лого: Индекс.Еда" class="logo__img">
             </a>
         </div>
+        <!-- /.logo -->
         <form class="header__search-panel search-panel">
             <input class="search-panel__input" type="search" placeholder="Блюда"></input>
             <button class="search-panel__button">
                 <img src="./img/search-icon.svg" alt="Поиск" class="search-panel__button-icon">
             </button>
         </form>
+        <!-- /.search-panel -->
         <div class="header__auth auth">
             <a href="#" class="auth__login-link">Войти</a>
         </div>
+        <!-- /.sauth -->
         <a class="header__cart">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_5:2)">
@@ -53,11 +56,70 @@
                     </clipPath>
                 </defs>
             </svg>
-            <span class="header__cart-counter">12</span>
+            <span class="header__cart-counter" id="cart-counter">0</span>
         </a>
     </header>
     <!-- /.header -->
 
+    <main class="main _container">
+        <div class="main__slider">
+            <div class="main__slide slide slide-text-light slide-summer">
+                <div class="slide-content">
+                    <h2 class="slide-title">Неделя летних
+                        овощей</h2>
+                    <p class="slide-text">Специальная овощная корзина. Новые продукты,
+                        специальные цены, скидки!</p>
+                    <a href="#" class="slide__button button button-primary">Заказать со скидкой</a>
+                </div>
+                <!-- /.slide-content -->
+            </div>
+            <!-- /.main__slide -->
+        </div>
+        <!-- /.main__slider -->
+
+        <div class="main__promo promo">
+            <section class="prono__card card card-text-light sweet-basket">
+                <img src="./img/sweet-basket.png" alt="Сладкая корзина" class="card__image">
+                <div class="card__header">
+                    <h3 class="card__header-title">Сладкая корзина</h3>
+                    <p class="card__header-description">Произвольный выбор
+                        десертов по Вашему
+                        желанию.</p>
+                </div>
+                <!-- /.card__header -->
+                <div class="card__footer">
+                    <strong class="card__footer-price">ОТ 1 300 ₽</strong>
+                    <span class="card__footer-delivery">стоимость доставки до 200 ₽</span>
+                    <a href="#" class="card__footer-button button button-default">Собрать корзину</a>
+                </div>
+                <!-- /.card__footer -->
+            </section>
+            <!-- /.promo__card -->
+
+            <section class="prono__card card card-text-light min-effort">
+                <img src="./img/min-effort.png" alt="Сладкая корзина" class="card__image">
+                <div class="card__header">
+                    <h3 class="card__header-title">Минимум усилий</h3>
+                    <p class="card__header-description">Произвольный выбор
+                    продуктов по Вашему
+                    желанию.</p>
+                </div>
+                <!-- /.card__header -->
+                <div class="card__footer">
+                    <strong class="card__footer-price">ОТ 700 ₽</strong>
+                    <span class="card__footer-delivery">стоимость доставки до 200 ₽</span>
+                    <a href="#" class="card__footer-button button button-default">Собрать корзину</a>
+                </div>
+                <!-- /.card__footer -->
+            </section>
+            <!-- /.promo__card -->
+        </div>
+        <!-- /.main__promo -->
+    </main>
+    <!-- /.main -->
+
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
